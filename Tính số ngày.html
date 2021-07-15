@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> BT13</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th><input type="number" id="so"></th>
+            <th><button type="button"onclick="tinhngay()">Tính số ngày</button> </th>
+        </tr>
+    </table>
+    <p id="songay"></p>
+</form>
+<script>
+
+    function tinhngay() {
+        let songay= +document.getElementById("so").value
+        switch (songay) {
+            case 1:
+                document.write("Tháng 1 có 31 ngày");
+                break;
+            case 2:
+                document.write("Tháng 2 có 28 hoặc 29 ngày");
+                break;
+            case 3:
+                document.write("Tháng 3 có 31 ngày");
+                break;
+            case 4:
+                document.write("Tháng 4 có 30 ngày");
+                break;
+            case 11:
+            case 8:
+            case 7:
+            case 6:
+            case 5:
+                document.write("Tháng 5 có 31 ngày");
+                break;
+            case 9:
+                document.write("Tháng 9 có 30 ngày");
+                break;
+            case 10:
+                document.write("Tháng 10 có 30 ngày");
+                break;
+            case 12:
+                document.write("Tháng 12 có 30 ngày");
+                break;
+        }
+    }
+
+</script>
+</body>
+</html>

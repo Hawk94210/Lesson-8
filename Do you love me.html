@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT14</title>
+</head>
+<style>
+  #no {
+    position: absolute;
+  }
+</style>
+<body>
+<h1>Do you love me</h1>
+<button type="button" id="no" style="position: absolute; left: 300px; top: 100px" onmouseover="changePosition();">No</button>
+<button type="button" id="yes">Yes</button>
+<script>
+  function changePosition () {
+    let x = Math.round(Math.random() * 200) + 300;
+    let y = Math.round(Math.random() * 200) + 200;
+
+    let no = document.getElementById("no");
+    no.style.left = x+'px';
+    no.style.top = y+'px';
+  }
+</script>
+</body>
+</html>
